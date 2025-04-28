@@ -95,9 +95,23 @@ h2 {
   margin-top: 10rem;
   margin-bottom: 1rem;
 }
+h3 {
+  font-size: 2.3rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
 
 p {
   font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4a74e6;
+}
+
+#home ul {
+  list-style-type: none;
 }
 
 .contact-links {
@@ -106,6 +120,7 @@ p {
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  margin-bottom: 4rem;
   list-style: none;
   padding: 0;
 }
@@ -133,4 +148,120 @@ p {
   margin-right: 1rem;
   flex-shrink: 0;
   filter: invert(1); /* inverts black icons to white, optional */
+}
+
+.project-card {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto; /* centers it */
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.project-card[image-allign="right"] .project-image-gallery {
+  order: 2;
+}
+
+.project-image-gallery {
+  flex: 1;
+  order: 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px; /* Adjust as you want */
+}
+
+.project-image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.project-image-gallery img.active {
+  opacity: 1;
+}
+
+.project-image-gallery button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.356);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 12px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.project-image-gallery .prev {
+  left: 10px;
+}
+
+.project-image-gallery .next {
+  right: 10px;
+}
+
+.project-info {
+  flex: 2;
+  order: 1;
+  padding: 30px;
+  background-color: #000000ad;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.fullscreen-div {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fullscreen-image {
+  width: 70%;
+  height: 90%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
 }

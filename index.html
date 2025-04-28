@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>TheWalkingLapis</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script/image_galery.js"></script>
 </head>
 <body>
     <canvas id="glcanvas"></canvas>
@@ -18,7 +19,7 @@
                 <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#links">Links</a>
             </li>
         </ul>
     </div>
@@ -27,17 +28,101 @@
         <section id="home">
             <h1>TheWalkingLapis</h1>
             <br>
-            <p>This website is work-in-progress</p>
-            <!-- <p>Graphics Programmer · Game Developer</p> -->
+            Hi, my name is Max aka. TheWalkingLapis and I am a Graphics Programmer, and in my freetime a Game Developer as well.
+            <br>
+            This webpage is meant to showcase some of my projects and means of contacting me. Please keep in mind:
+            <p>!! This website is work-in-progress !!</p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>TODO</p>
+            <p>Here are some of the projetcs I am most proud of :)</p>
+            <h3> Game Jams </h3>
+            <p>
+                These are the results of me participating in Game Jams alone or with a crew. Check them out on my <a href="https://itch.io/profile/thewalkinglapis" target="_blank">itch.io page</a>!
+            </p>
+            <div class="project-card">
+                <div class="project-image-gallery" category="game-jam">
+                    <img src="images/project_aleph/PROJECT_aleph.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_couch.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_cat.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_room.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_safe.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_door.png" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Project Aleph</h4>
+                    <p>Short description of the project, tech stack, goals, etc.</p>
+                </div>
+            </div>
+            <div class="project-card" image-allign="right" category="game-jam">
+                <div class="project-image-gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_cover.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot_2.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot_3.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_menu.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot_4.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot_5.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/blobman_in_the_dungeon/gmtk_screenshot_6.png" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>The Blobman [on Fire] in the Miniature Dungeon</h4>
+                    <p>Short description of the project, tech stack, goals, etc.</p>
+                </div>
+            </div>
+            <div class="project-card" category="game-jam">
+                <div class="project-image-gallery">
+                    <img src="images/jeremy_from_HR/itch_title.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/jeremy_from_HR/passage.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/jeremy_from_HR/map.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/jeremy_from_HR/wires.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/jeremy_from_HR/office.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/jeremy_from_HR/storage.png" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Jeremy from HR</h4>
+                    <p>Short description of the project, tech stack, goals, etc.</p>
+                </div>
+            </div>
+
+
+            <h3> Web Development </h3>
+            <p>
+                Projects that utilize javascript / html / css / webGL / ...
+            </p>
+            <div class="project-card" image-allign="right" category="web-dev">
+                <div class="project-image-gallery">
+                    <img src="images/portfolio/Screenshot TheWalkingLapis.png" class="active" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>This Webpage</h4>
+                    <p>Designing and Implementing this portfolio page, including an animates background using webGL shaders.</p>
+                </div>
+            </div>
+            <div class="project-card" category="web-dev" >
+                <div class="project-image-gallery">
+                    <img src="images/shadertoy/Screenshot SDF Raymarched Scene.png" class="active" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Shadertoy</h4>
+                    <p>Some playing around with fragment shaders on Shadertoy. Currently working on a <a href="https://www.shadertoy.com/view/3XfSzr" target="_blank">raymarching demo</a> from time to time.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
+        <section id="links">
+            <h2>Links</h2>
             <ul class="contact-links">
                 <li>
                   <a href="https://github.com/TheWalkingLapis" target="_blank">
@@ -53,8 +138,13 @@
                 </li>
               </ul>
         </section>
-    
     </div>
+    <!-- hidden div to display fullscreen images from the galeries -->
+    <div class="fullscreen-div" id="fullscreenDiv">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="fullscreen-image" id="fullscreenImage" src="" alt="Full Screen Image">
+    </div>
+    
 
     <script src="./script/background.js"></script>
 </body>
