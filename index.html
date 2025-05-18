@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>TheWalkingLapis</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="data:">
+    <script src="./script/page.js"></script>
     <script src="./script/image_galery.js"></script>
 </head>
 <body>
@@ -13,13 +15,13 @@
     <div class="topnav">
         <ul>
             <li>
-                <a href="#home">Home</a>
+                <a onclick="onClickTopNav('home')">Home</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a onclick="onClickTopNav('projects')">Projects</a>
             </li>
             <li>
-                <a href="#links">Links</a>
+                <a onclick="onClickTopNav('links')">Links</a>
             </li>
         </ul>
     </div>
@@ -30,34 +32,13 @@
             <br>
             Hi, my name is Max aka. TheWalkingLapis and I am a Graphics Programmer, and in my freetime a Game Developer as well.
             <br>
-            This webpage is meant to showcase some of my projects and means of contacting me. Please keep in mind:
-            <p>!! This website is work-in-progress !!</p>
+            This webpage is meant to showcase some of my projects and means of contacting me.
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>Here are some of the projetcs I am most proud of :)</p>
+            <p> A few words and images to some of the projects I completed (or am working on).</p>
 
-            <h3> University </h3>
-            <p>
-                subtext
-            </p>
-            <div class="project-card">
-                <div class="project-image-gallery" category="game-jam">
-                    <img src="images/project_aleph/PROJECT_aleph.png" class="active" alt="Image Missing :/" type="gallery">
-                    <img src="images/project_aleph/itch_couch.png" alt="Image Missing :/" type="gallery">
-                    <img src="images/project_aleph/itch_cat.png" alt="Image Missing :/" type="gallery">
-                    <img src="images/project_aleph/itch_room.png" alt="Image Missing :/" type="gallery">
-                    <img src="images/project_aleph/itch_safe.png" alt="Image Missing :/" type="gallery">
-                    <img src="images/project_aleph/itch_door.png" alt="Image Missing :/" type="gallery">
-                    <button class="prev">⟨</button>
-                    <button class="next">⟩</button>
-                </div>
-                <div class="project-info">
-                    <h4>Project Aleph</h4>
-                    <p>Short description of the project, tech stack, goals, etc.</p>
-                </div>
-            </div>
 
             <h3> Game Jams </h3>
             <p>
@@ -170,6 +151,32 @@
                     <p>Some playing around with fragment shaders on Shadertoy. Currently working on a <a href="https://www.shadertoy.com/view/3XfSzr" target="_blank">raymarching demo</a> from time to time.</p>
                 </div>
             </div>
+
+
+            <h3> Others </h3>
+            <p>
+                Projects that didn't really fit in any of the other categories.
+            </p>
+            <div class="project-card" category="others" >
+                <div class="project-image-gallery">
+                    <img src="images/sunken_duck/sim_duck_alone_alpha.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/sunken_duck/sim_duck_launch_alpha.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/sunken_duck/blender_duck_solid.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/sunken_duck/blender_duck_particles.png" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Sunken Duck</h4>
+                    <p>
+                        University project for the course 'Physically-based Simulation in Computer Graphics'. 
+                        The goal was to have an SPH simulation interact with dynamic boundaries (rigid bodies), 
+                        which in this case was a rubber ducks that I modeled :). The primary reference for the boundary handling was the "SPH Tutorial" paper
+                        <a href="https://diglib.eg.org/handle/10.2312/egt20191035">Smoothed Particle Hydrodynamics Techniques for the Physics Based Simulation of Fluids and Solids</a>.
+                    </p>
+                </div>
+            </div>
+
         </section>
 
         <section id="links">
