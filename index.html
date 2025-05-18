@@ -37,9 +37,31 @@
         <section id="projects">
             <h2>Projects</h2>
             <p>Here are some of the projetcs I am most proud of :)</p>
+
+            <h3> University </h3>
+            <p>
+                subtext
+            </p>
+            <div class="project-card">
+                <div class="project-image-gallery" category="game-jam">
+                    <img src="images/project_aleph/PROJECT_aleph.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_couch.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_cat.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_room.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_safe.png" alt="Image Missing :/" type="gallery">
+                    <img src="images/project_aleph/itch_door.png" alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Project Aleph</h4>
+                    <p>Short description of the project, tech stack, goals, etc.</p>
+                </div>
+            </div>
+
             <h3> Game Jams </h3>
             <p>
-                These are the results of me participating in Game Jams alone or with a crew. Check them out on my <a href="https://itch.io/profile/thewalkinglapis" target="_blank">itch.io page</a>!
+                These are the results of me participating in Game Jams alone or in a team of two. Check them out on my <a href="https://itch.io/profile/thewalkinglapis" target="_blank">itch.io page</a>!
             </p>
             <div class="project-card">
                 <div class="project-image-gallery" category="game-jam">
@@ -97,6 +119,22 @@
             <p>
                 Projects that utilize javascript / html / css / webGL / ...
             </p>
+            <div class="project-card" image-allign="left" category="web-dev">
+                <div class="project-image-gallery">
+                    <img src="images/automated_grading/sheet_circles_greyscale.png" class="active" alt="Image Missing :/" type="gallery">
+                    <img src="images/automated_grading/sheet_advanced_table.png"alt="Image Missing :/" type="gallery">
+                    <button class="prev">⟨</button>
+                    <button class="next">⟩</button>
+                </div>
+                <div class="project-info">
+                    <h4>Automated assignment grading</h4>
+                    <p>
+                        Together with a fellow student I am creating an automated grading system for a computer graphics course at my university.
+                        The assignments are done in javascript and glsl. The automation works by per-pixel comparisons of the canvases the submissions are rendered into,
+                        which is why reworking some exercises is part of this project as well to enable such comparisons.
+                    </p>
+                </div>
+            </div>
             <div class="project-card" image-allign="right" category="web-dev">
                 <div class="project-image-gallery">
                     <img src="images/portfolio/Screenshot TheWalkingLapis.png" class="active" alt="Image Missing :/" type="gallery">
@@ -105,7 +143,9 @@
                 </div>
                 <div class="project-info">
                     <h4>This Webpage</h4>
-                    <p>Designing and Implementing this portfolio page, including an animates background using webGL shaders.</p>
+                    <p>
+                        Designing and Implementing this portfolio page, practicting my html, css and js skills. 
+                        The animated background uses webGL shaders and will (hopefully) be updated in the future.</p>
                 </div>
             </div>
             <div class="project-card" category="web-dev" >
